@@ -1,0 +1,160 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="812da6c0-91d7-44df-af50-219a01421c44" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Issuer</ID>
+  <Name>Dim Issuer</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="341341c7-bcd8-4c38-9d98-18dc03abc543">
+    <DataSourceViewID>NYC Parking</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="bf18827b-f1ef-4f18-92a0-9acfee205771">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="6690a2c4-81ee-4680-8630-05b0810a0fb1">
+      <ID>Issuer Key</ID>
+      <Name>Issuer Key</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bc11238e-65bc-410e-996d-fe134e95af21">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e2185e78-6069-4105-b6f4-e67f18669b22">
+            <TableID>load_DimIssuer</TableID>
+            <ColumnID>issuerKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="256f693b-8308-44cc-9c21-173c52a0d798">
+          <AttributeID>Issuer Code</AttributeID>
+          <Name>Issuer Code</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="52773190-be73-4c60-b461-75a8744dbfb6">
+          <AttributeID>Issuerpercent</AttributeID>
+          <Name>Issuerpercent</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b6de5991-d9da-4789-b2ca-d4a20681410e">
+          <AttributeID>Issuercommand</AttributeID>
+          <Name>Issuercommand</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f62689c6-7226-4c0d-a2a0-5cff152576bf">
+          <AttributeID>Issuersquad</AttributeID>
+          <Name>Issuersquad</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e619c55e-3471-4cf3-bddd-5a510ad8ea3b">
+      <ID>Issuer Code</ID>
+      <Name>Issuer Code</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0721a797-fddf-40fa-8255-47b57bc0e0de">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6b93ca5d-47ff-4c4d-9064-47eca5c198e8">
+            <TableID>load_DimIssuer</TableID>
+            <ColumnID>issuerCode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="32c6b0d9-ac64-4d93-855d-5cdeeea7b8ab">
+      <ID>Issuerpercent</ID>
+      <Name>Issuerpercent</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ee806218-ab54-43bb-8bad-8c8844c9d70b">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9f6f4cb1-29f1-4c23-b61f-9027e836cf7e">
+            <TableID>load_DimIssuer</TableID>
+            <ColumnID>issuerpercent</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7c73e0ec-28ca-48a9-9c66-c44f2478cea3">
+      <ID>Issuercommand</ID>
+      <Name>Issuercommand</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="64f548ee-f01f-4660-8390-1015f640ae75">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4ca9612f-802f-4b72-b85a-ae99bd3c17ea">
+            <TableID>load_DimIssuer</TableID>
+            <ColumnID>issuercommand</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="12d614ef-e1bd-4020-b8ca-94289f84b010">
+      <ID>Issuersquad</ID>
+      <Name>Issuersquad</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ea5a0ca7-5602-4b70-acd5-d4fd9299d60e">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="03a1726d-314c-4b14-b83a-260d94a2aade">
+            <TableID>load_DimIssuer</TableID>
+            <ColumnID>issuersquad</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

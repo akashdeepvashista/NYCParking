@@ -1,0 +1,221 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b7d93278-1fa8-49b8-af96-3dd77d87d17a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Tickets</ID>
+  <Name>Dim Tickets</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="a01d0647-c1bc-4d73-a750-32a5a0f3e720">
+    <DataSourceViewID>NYC Parking</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="b994edeb-24e7-4990-86c4-29bb7cd4d62c">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="dfd05b9c-a396-4bd6-9b0f-ed6571256d0a">
+      <ID>Ticket Key</ID>
+      <Name>Ticket Key</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b1482f72-85e2-40cd-9c70-700a06a7b9c2">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fca11786-0d20-4d0b-9086-7fbf54cdc085">
+            <TableID>load_DimTickets</TableID>
+            <ColumnID>ticketKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="fdbf2a0e-f8e4-4300-ab15-6465d6c4f99f">
+          <AttributeID>Summonsnumber</AttributeID>
+          <Name>Summonsnumber</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a365a940-78d6-4381-9d20-98abb7f6cdb0">
+          <AttributeID>Plateid</AttributeID>
+          <Name>Plateid</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0ac6a89f-7cc2-4813-a809-d406c59e39e0">
+          <AttributeID>Issuedate</AttributeID>
+          <Name>Issuedate</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7f583dd7-4909-4ebe-8511-e7e066be26d7">
+          <AttributeID>Issuingagency</AttributeID>
+          <Name>Issuingagency</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="11273d54-89b6-4e68-9d25-13ee25390824">
+          <AttributeID>Voilationlocation</AttributeID>
+          <Name>Voilationlocation</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7d802a11-9924-47d2-b1e7-55afb48721ad">
+          <AttributeID>Violationprecint</AttributeID>
+          <Name>Violationprecint</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="fbf20278-c7da-4710-a75e-cb614898e2e3">
+          <AttributeID>Violationtime</AttributeID>
+          <Name>Violationtime</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="39227b58-0724-4ff1-b42f-d75a9120a662">
+      <ID>Summonsnumber</ID>
+      <Name>Summonsnumber</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d44bfe28-2cfb-4547-aca2-8b44e19fdb4b">
+          <DataType>BigInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e6c59e4a-1d0e-4e68-bad4-9867516887c7">
+            <TableID>load_DimTickets</TableID>
+            <ColumnID>summonsnumber</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="109f33c4-9d2d-40df-8804-53752d309798">
+      <ID>Plateid</ID>
+      <Name>Plateid</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a081f483-600d-434f-bcfe-76a911fc3864">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ee9ae5ef-61c3-482f-b705-9d2c71212f5a">
+            <TableID>load_DimTickets</TableID>
+            <ColumnID>plateid</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1e949194-10fc-4d56-9c59-03f9daafd499">
+      <ID>Issuedate</ID>
+      <Name>Issuedate</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b1a74ee5-1932-4644-b83f-74fda592cd58">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5914c45e-748b-4261-91d9-d19aa436b2ca">
+            <TableID>load_DimTickets</TableID>
+            <ColumnID>issuedate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="deeb02e8-22b4-4a8b-8bab-f150c10249a6">
+      <ID>Issuingagency</ID>
+      <Name>Issuingagency</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ea9a5aae-eddf-479e-b329-9ab3b400b366">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="86305e7c-7a9b-458b-b977-6154fc04a4e2">
+            <TableID>load_DimTickets</TableID>
+            <ColumnID>issuingagency</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ad97b86a-d72e-4952-8540-8a0c360fd39d">
+      <ID>Voilationlocation</ID>
+      <Name>Voilationlocation</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9a789dbd-b66b-4dc1-a9d6-273607905490">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d29a3dba-b0b6-457b-b4ea-1f06f46cb0f0">
+            <TableID>load_DimTickets</TableID>
+            <ColumnID>voilationlocation</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="738d18ca-8d86-4c45-9388-c9033c88bdf3">
+      <ID>Violationprecint</ID>
+      <Name>Violationprecint</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fdb9794e-9c6e-45ff-a284-f9374c526f9c">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ea826c04-7b2e-44ab-a333-72df8ac53d25">
+            <TableID>load_DimTickets</TableID>
+            <ColumnID>violationprecint</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="61881717-bbe2-45ac-97c5-70bb57051597">
+      <ID>Violationtime</ID>
+      <Name>Violationtime</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8e3ed2c6-b336-412c-8151-0a94d42a3a48">
+          <DataType>WChar</DataType>
+          <DataSize>10</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4ec9ae21-3dbb-40ec-87a9-e5a8ebca9ef2">
+            <TableID>load_DimTickets</TableID>
+            <ColumnID>violationtime</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

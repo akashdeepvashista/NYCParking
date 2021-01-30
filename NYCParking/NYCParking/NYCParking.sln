@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1062
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "NYCParkingAnalysis", "NYCParkingAnalysis\NYCParkingAnalysis.dwproj", "{9A46A68A-1A0F-4A96-B57E-251ADB0C3F84}"
+EndProject
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "NYCParkingIntegration", "NYCParkingIntegration\NYCParkingIntegration.dtproj", "{CFDA1395-5787-411B-9F61-B18EAB56B5C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A46A68A-1A0F-4A96-B57E-251ADB0C3F84}.Development|Default.ActiveCfg = Development
+		{9A46A68A-1A0F-4A96-B57E-251ADB0C3F84}.Development|Default.Build.0 = Development
+		{9A46A68A-1A0F-4A96-B57E-251ADB0C3F84}.Development|Default.Deploy.0 = Development
+		{CFDA1395-5787-411B-9F61-B18EAB56B5C9}.Development|Default.ActiveCfg = Development
+		{CFDA1395-5787-411B-9F61-B18EAB56B5C9}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7B54AA9E-47B4-4B0E-86F8-603568940EA6}
+	EndGlobalSection
+EndGlobal

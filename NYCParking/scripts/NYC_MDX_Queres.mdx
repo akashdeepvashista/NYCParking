@@ -1,0 +1,40 @@
+select non empty {[Measures].[AverageAmount], [Measures].[AverageSeverity]
+}on Columns , non empty
+{[Dim Vehicles].[Vehiclebodytype].[2DSD], [Dim Vehicles].[Vehiclebodytype].[4DSD]
+}on rows
+from [NYC Parking]
+where
+([Dim Vehicles].[Registrationstate].[NJ]);
+
+
+select non empty {[Measures].[Fact Violation Measures Count], [Measures].[AverageSeverity]
+}on Columns , non empty
+{[Dim Vehicles].[Vehiclemake].[ACURA],[Dim Vehicles].[Vehiclemake].[BMW]
+}on rows
+from [NYC Parking];
+
+
+
+select non empty {[Measures].[Maximum Amount]
+}on Columns , non empty
+{[Dim Vehicles].[Vehiclemake].[ACURA]
+}on rows
+from [NYC Parking]
+where
+[Dim Vehicles].[Registrationstate].Members
+
+
+select non empty {[Measures].[PaidPercent],[Measures].[Amount]
+}on Columns , non empty
+{[Dim Law Code].[Violationcode].[17]
+}on rows
+from [NYC Parking]
+where
+([Dim Vehicle Plate Type].[Platetype].[PAS]);
+
+select non empty {[Measures].[Maximum Amount],[Measures].[Minimum Amount],[Measures].[PaidPercent]
+}on Columns
+, non empty
+([Dim Vehicle Plate Type].[Platetype].[COM],[Dim Vehicles].[Vehiclemake].Members
+)on rows
+from [NYC Parking]

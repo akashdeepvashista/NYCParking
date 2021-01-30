@@ -1,0 +1,441 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="6ab02ff6-eefa-41b3-bde3-0b72ef057be9" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>NYC Parking</ID>
+  <Name>NYC Parking</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>NYC Parking</DataSourceID>
+  <Schema>
+    <xs:schema id="NYC_x0020_Parking" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="NYC_x0020_Parking" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="112ca3bc-b3d3-4016-a2f3-671ca2b81622">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="load_FactViolationMeasures" msprop:design-time-name="477fe44b-c2e7-4936-8d63-fcb45c121580" msprop:DbTableName="FactViolationMeasures" msprop:FriendlyName="FactViolationMeasures" msprop:DbSchemaName="load" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ticketKey" msprop:design-time-name="41fe4330-d228-42cd-b6ba-80c134a0cb44" msprop:DbColumnName="ticketKey" msprop:FriendlyName="ticketKey" type="xs:int" />
+                  <xs:element name="DateKey" msprop:design-time-name="6da69bd2-9b17-4206-9e6a-8ac1bf67ec45" msprop:DbColumnName="DateKey" msprop:FriendlyName="DateKey" type="xs:int" />
+                  <xs:element name="vehiclePlateTypeKey" msprop:design-time-name="b77c5f36-4fc0-4324-8308-a6d031561e61" msprop:DbColumnName="vehiclePlateTypeKey" msprop:FriendlyName="vehiclePlateTypeKey" type="xs:int" />
+                  <xs:element name="vehicleKey" msprop:design-time-name="414b48b5-4716-4394-8a15-d0056ce52856" msprop:DbColumnName="vehicleKey" msprop:FriendlyName="vehicleKey" type="xs:int" />
+                  <xs:element name="lawCodeKey" msprop:design-time-name="42a45071-1653-4fec-8e2d-90f999ceccf5" msprop:DbColumnName="lawCodeKey" msprop:FriendlyName="lawCodeKey" type="xs:int" />
+                  <xs:element name="issuerKey" msprop:design-time-name="b4660a4c-2630-4792-b4fc-c78cf1fc92c0" msprop:DbColumnName="issuerKey" msprop:FriendlyName="issuerKey" type="xs:int" />
+                  <xs:element name="addressTimingKey" msprop:design-time-name="d378a780-c02d-4180-a0cd-7b19e0e58abe" msprop:DbColumnName="addressTimingKey" msprop:FriendlyName="addressTimingKey" type="xs:int" />
+                  <xs:element name="Amount" msprop:design-time-name="65c4e803-410b-4fda-9739-cab888e91c4d" msprop:DbColumnName="Amount" msprop:FriendlyName="Amount" type="xs:int" />
+                  <xs:element name="paidpercentage" msprop:design-time-name="38517100-5b3c-49dd-a030-db9af928273b" msprop:DbColumnName="paidpercentage" msprop:FriendlyName="paidpercentage" type="xs:unsignedByte" />
+                  <xs:element name="avgseverity" msprop:design-time-name="e19bb327-20fc-41f5-9a96-98194b4f4750" msprop:DbColumnName="avgseverity" msprop:FriendlyName="avgseverity" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="load_DimAddressTiming" msprop:design-time-name="dbf4d06e-668e-4f47-af07-db5237c56814" msprop:DbTableName="DimAddressTiming" msprop:FriendlyName="DimAddressTiming" msprop:DbSchemaName="load" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="addressTimingKey" msprop:design-time-name="439ab236-b384-44ab-9671-900baecec5f0" msprop:DbColumnName="addressTimingKey" msprop:FriendlyName="addressTimingKey" type="xs:int" />
+                  <xs:element name="houseNum" msprop:design-time-name="764f7364-f795-4c55-b0a3-b40e58896a8a" msprop:DbColumnName="houseNum" msprop:FriendlyName="houseNum" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="streetname" msprop:design-time-name="91cd7b37-92b8-4dab-b41f-00b239338c92" msprop:DbColumnName="streetname" msprop:FriendlyName="streetname" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="intersectingstreet" msprop:design-time-name="74ee691c-82da-45ce-a9fd-8ee524748959" msprop:DbColumnName="intersectingstreet" msprop:FriendlyName="intersectingstreet" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="daysparkingineffect" msprop:design-time-name="9565f845-1e1f-4d88-acd1-4cc42b9be2a2" msprop:DbColumnName="daysparkingineffect" msprop:FriendlyName="daysparkingineffect" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="fromhoursineffect" msprop:design-time-name="82588a47-14b5-401b-842e-ebf1384b6efb" msprop:DbColumnName="fromhoursineffect" msprop:FriendlyName="fromhoursineffect" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="tohoursineffect" msprop:design-time-name="52f7f24c-72cb-4acc-bd30-339acb204a26" msprop:DbColumnName="tohoursineffect" msprop:FriendlyName="tohoursineffect" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="violationcounty" msprop:design-time-name="64f27db1-d0d9-49b6-af4d-9e61a10f3e22" msprop:DbColumnName="violationcounty" msprop:FriendlyName="violationcounty" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="load_DimVehicles" msprop:design-time-name="45a33396-918a-4a3a-81e8-92a4e26fd123" msprop:DbTableName="DimVehicles" msprop:FriendlyName="DimVehicles" msprop:DbSchemaName="load" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="vehicleKey" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="70e86f48-c52e-4ec5-a3f2-282e923ee41e" msprop:DbColumnName="vehicleKey" msprop:FriendlyName="vehicleKey" type="xs:int" />
+                  <xs:element name="plateID" msprop:design-time-name="5441c7c4-4485-4084-8463-9ad9e53d53de" msprop:DbColumnName="plateID" msprop:FriendlyName="plateID" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="registrationstate" msprop:design-time-name="de276c73-e955-4155-80df-e2b8917d6b93" msprop:DbColumnName="registrationstate" msprop:FriendlyName="registrationstate" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="platetype" msprop:design-time-name="0aba5988-3851-44ae-bb38-b815b07e6e27" msprop:DbColumnName="platetype" msprop:FriendlyName="platetype">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="5" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="vehiclebodytype" msprop:design-time-name="c5644ea9-3342-4e94-b893-31f593b7a47a" msprop:DbColumnName="vehiclebodytype" msprop:FriendlyName="vehiclebodytype" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="vehiclemake" msprop:design-time-name="a4a9a593-4dec-4882-ba59-462ccbaf89eb" msprop:DbColumnName="vehiclemake" msprop:FriendlyName="vehiclemake" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="vehicleexpdate" msprop:design-time-name="bcc9b7f9-67f8-4af0-9db0-e18133912df5" msprop:DbColumnName="vehicleexpdate" msprop:FriendlyName="vehicleexpdate" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="vehiclecolor" msprop:design-time-name="315df7f1-d560-4953-9433-cb2c4cbc7195" msprop:DbColumnName="vehiclecolor" msprop:FriendlyName="vehiclecolor" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="vehicleyear" msprop:design-time-name="497235da-5cf0-4c61-8a82-47d21cb47173" msprop:DbColumnName="vehicleyear" msprop:FriendlyName="vehicleyear" type="xs:short" minOccurs="0" />
+                  <xs:element name="unregisteredvehicles" msprop:design-time-name="923d8364-7ca0-4874-91c8-17a59a615f68" msprop:DbColumnName="unregisteredvehicles" msprop:FriendlyName="unregisteredvehicles" type="xs:boolean" minOccurs="0" />
+                  <xs:element name="startdate" msprop:design-time-name="76995c21-37c8-4ff9-9ae9-3179fae74422" msprop:DbColumnName="startdate" msprop:FriendlyName="startdate" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="enddate" msprop:design-time-name="815b957e-9ab3-4f6c-9722-0a2fac691698" msprop:DbColumnName="enddate" msprop:FriendlyName="enddate" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="load_DimVehiclePlateType" msprop:design-time-name="28b04e78-71cb-4e88-a864-6c40393cdb40" msprop:DbTableName="DimVehiclePlateType" msprop:FriendlyName="DimVehiclePlateType" msprop:DbSchemaName="load" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="vehiclePlateTypeKey" msprop:design-time-name="4c326db1-8470-40a9-a32e-c088ff840d91" msprop:DbColumnName="vehiclePlateTypeKey" msprop:FriendlyName="vehiclePlateTypeKey" type="xs:int" />
+                  <xs:element name="platetype" msprop:design-time-name="d79067b2-f6c6-498e-9787-078190ab608a" msprop:DbColumnName="platetype" msprop:FriendlyName="platetype" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="platedescription" msprop:design-time-name="c2fe0163-4391-4435-a992-2d89f63235c5" msprop:DbColumnName="platedescription" msprop:FriendlyName="platedescription" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="load_DimTickets" msprop:design-time-name="64f85744-6e54-4fbb-bf8b-2195fa40da9f" msprop:DbTableName="DimTickets" msprop:FriendlyName="DimTickets" msprop:DbSchemaName="load" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ticketKey" msprop:design-time-name="1db9fe92-a875-45d6-9a7c-b5feff42fd0e" msprop:DbColumnName="ticketKey" msprop:FriendlyName="ticketKey" type="xs:int" />
+                  <xs:element name="summonsnumber" msprop:design-time-name="6224cda2-8b1a-4daf-a56e-e41152aec36b" msprop:DbColumnName="summonsnumber" msprop:FriendlyName="summonsnumber" type="xs:long" minOccurs="0" />
+                  <xs:element name="plateid" msprop:design-time-name="19919808-d643-4c36-acbd-e525f359dd18" msprop:DbColumnName="plateid" msprop:FriendlyName="plateid" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="issuedate" msprop:design-time-name="46ebf5db-6f4e-4eff-a6ac-c17130d95478" msprop:DbColumnName="issuedate" msprop:FriendlyName="issuedate" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="issuingagency" msprop:design-time-name="5a016bc8-9b88-4ecd-b51a-a1b4a2cdf8f7" msprop:DbColumnName="issuingagency" msprop:FriendlyName="issuingagency" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="streetcode1" msprop:design-time-name="01627833-3086-42aa-b895-2120d133d735" msprop:DbColumnName="streetcode1" msprop:FriendlyName="streetcode1" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="streetcode2" msprop:design-time-name="f792e9da-64ad-4df0-b34a-eb6f3b29bced" msprop:DbColumnName="streetcode2" msprop:FriendlyName="streetcode2" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="streetcode3" msprop:design-time-name="736ba658-1846-42df-9e34-3ffed63fb6cb" msprop:DbColumnName="streetcode3" msprop:FriendlyName="streetcode3" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="voilationlocation" msprop:design-time-name="ce0c9086-54cb-47e9-ba7c-c7436dbd3b1b" msprop:DbColumnName="voilationlocation" msprop:FriendlyName="voilationlocation" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="violationprecint" msprop:design-time-name="a14f4374-6a0a-4963-b9fe-3a66d2fe9438" msprop:DbColumnName="violationprecint" msprop:FriendlyName="violationprecint" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="issuerID" msprop:design-time-name="e0d0b587-19fc-4913-b491-beb90fa5af10" msprop:DbColumnName="issuerID" msprop:FriendlyName="issuerID" type="xs:int" minOccurs="0" />
+                  <xs:element name="violationtime" msprop:design-time-name="153f9569-1151-4ff0-ad8a-7e06b1764712" msprop:DbColumnName="violationtime" msprop:FriendlyName="violationtime" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="violationfrontopposite" msprop:design-time-name="76599950-d146-43d0-a432-bc3f0f59d09e" msprop:DbColumnName="violationfrontopposite" msprop:FriendlyName="violationfrontopposite" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="lawcodeID" msprop:design-time-name="5f121335-1c80-45eb-81cd-09c7a39cfbd9" msprop:DbColumnName="lawcodeID" msprop:FriendlyName="lawcodeID" type="xs:int" />
+                  <xs:element name="addressparktimeID" msprop:design-time-name="24877dd4-60d0-4f01-8db4-2285c3edc290" msprop:DbColumnName="addressparktimeID" msprop:FriendlyName="addressparktimeID" type="xs:int" />
+                  <xs:element name="ispaid" msprop:design-time-name="5a96c853-d595-4a8b-8e18-ac4701992e7f" msprop:DbColumnName="ispaid" msprop:FriendlyName="ispaid" type="xs:boolean" />
+                  <xs:element name="amount" msprop:design-time-name="6631bc37-96cf-4726-89b2-81ebc587308e" msprop:DbColumnName="amount" msprop:FriendlyName="amount" type="xs:decimal" />
+                  <xs:element name="severity" msprop:design-time-name="9d1394a1-aaeb-492d-b34b-c59dc73eafde" msprop:DbColumnName="severity" msprop:FriendlyName="severity" type="xs:unsignedByte" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="load_DimIssuer" msprop:design-time-name="8121f98b-9912-461a-99c4-cbbc54be0644" msprop:DbTableName="DimIssuer" msprop:FriendlyName="DimIssuer" msprop:DbSchemaName="load" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="issuerKey" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="96b950ca-511f-4413-991f-7e5a9a559fb2" msprop:DbColumnName="issuerKey" msprop:FriendlyName="issuerKey" type="xs:int" />
+                  <xs:element name="issuerCode" msprop:design-time-name="f238e66e-ee6c-4ab0-873b-496b454cacb1" msprop:DbColumnName="issuerCode" msprop:FriendlyName="issuerCode" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="issuerpercent" msprop:design-time-name="a142d05f-251c-42c1-99e2-7d88b49507e2" msprop:DbColumnName="issuerpercent" msprop:FriendlyName="issuerpercent" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="issuercommand" msprop:design-time-name="7d935a29-63be-4a38-bf8a-2e7757422182" msprop:DbColumnName="issuercommand" msprop:FriendlyName="issuercommand" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="issuersquad" msprop:design-time-name="e6031e37-abde-4981-b7fb-932a5603691d" msprop:DbColumnName="issuersquad" msprop:FriendlyName="issuersquad" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="startdate" msprop:design-time-name="178bcac2-ea98-43bd-ab04-bab43e602b9f" msprop:DbColumnName="startdate" msprop:FriendlyName="startdate" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="enddate" msprop:design-time-name="a40a04e0-e560-40eb-b2e6-26f6ee6433e5" msprop:DbColumnName="enddate" msprop:FriendlyName="enddate" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="load_DimLawCode" msprop:design-time-name="6f089b78-06a6-469d-9790-1029568b694f" msprop:DbTableName="DimLawCode" msprop:FriendlyName="DimLawCode" msprop:DbSchemaName="load" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="lawCodeKey" msprop:design-time-name="92009839-b7cf-4c18-9b61-af52e6d7814e" msprop:DbColumnName="lawCodeKey" msprop:FriendlyName="lawCodeKey" type="xs:int" />
+                  <xs:element name="violationcode" msprop:design-time-name="027148ec-08d2-4953-aca0-dea9d6ed0dd9" msprop:DbColumnName="violationcode" msprop:FriendlyName="violationcode" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="violationdescription" msprop:design-time-name="101a2d3e-3fc5-4cde-9597-9574106be28f" msprop:DbColumnName="violationdescription" msprop:FriendlyName="violationdescription" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="lawsection" msprop:design-time-name="5b138f25-7982-407d-8128-de4fb500566f" msprop:DbColumnName="lawsection" msprop:FriendlyName="lawsection" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="subdivision" msprop:design-time-name="deb0cf07-ca9e-4757-ad72-93a40072674c" msprop:DbColumnName="subdivision" msprop:FriendlyName="subdivision" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="load_DimDate" msprop:design-time-name="eaddec53-4c4f-466e-a549-9137d901292e" msprop:DbTableName="DimDate" msprop:FriendlyName="DimDate" msprop:DbSchemaName="load" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="DateKey" msprop:design-time-name="5b116e71-14c3-4ad8-8fbe-977ba9033f5c" msprop:DbColumnName="DateKey" msprop:FriendlyName="DateKey" type="xs:int" />
+                  <xs:element name="DateValue" msprop:design-time-name="d7503a8a-52d2-4d58-9970-83cfc0c2a997" msprop:DbColumnName="DateValue" msprop:FriendlyName="DateValue" type="xs:dateTime" />
+                  <xs:element name="CYear" msprop:design-time-name="e41498ef-6f92-4dc8-87ea-09a7543bfa0c" msprop:DbColumnName="CYear" msprop:FriendlyName="CYear" type="xs:short" />
+                  <xs:element name="CMonth" msprop:design-time-name="255be08f-cbf5-4123-a080-e8581da48dc0" msprop:DbColumnName="CMonth" msprop:FriendlyName="CMonth" type="xs:unsignedByte" />
+                  <xs:element name="DayNo" msprop:design-time-name="eab81dac-ec10-4ff2-a1b5-035ed56dbfbc" msprop:DbColumnName="DayNo" msprop:FriendlyName="DayNo" type="xs:unsignedByte" />
+                  <xs:element name="CQtr" msprop:design-time-name="16043305-c6ce-4ce8-adb5-cde5d2081c1e" msprop:DbColumnName="CQtr" msprop:FriendlyName="CQtr" type="xs:unsignedByte" />
+                  <xs:element name="StartOfMonth" msprop:design-time-name="aeffa5ff-5218-4543-80ca-66931700b651" msprop:DbColumnName="StartOfMonth" msprop:FriendlyName="StartOfMonth" type="xs:dateTime" />
+                  <xs:element name="EndOfMonth" msprop:design-time-name="a4c92cdf-3eb8-4fe9-9a06-4a4c881bdfdf" msprop:DbColumnName="EndOfMonth" msprop:FriendlyName="EndOfMonth" type="xs:dateTime" />
+                  <xs:element name="MonthName" msprop:design-time-name="992a3331-20a8-4327-90c9-c8d8e8a4af27" msprop:DbColumnName="MonthName" msprop:FriendlyName="MonthName">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="9" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DayOfWeekName" msprop:design-time-name="5ea44c89-a9a0-45fd-8ea3-517a4d22a0f2" msprop:DbColumnName="DayOfWeekName" msprop:FriendlyName="DayOfWeekName">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="9" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//load_DimAddressTiming" />
+          <xs:field xpath="addressTimingKey" />
+        </xs:unique>
+        <xs:unique name="load_DimVehicles_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//load_DimVehicles" />
+          <xs:field xpath="vehicleKey" />
+        </xs:unique>
+        <xs:unique name="load_DimVehiclePlateType_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//load_DimVehiclePlateType" />
+          <xs:field xpath="vehiclePlateTypeKey" />
+        </xs:unique>
+        <xs:unique name="load_DimTickets_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//load_DimTickets" />
+          <xs:field xpath="ticketKey" />
+        </xs:unique>
+        <xs:unique name="load_DimIssuer_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//load_DimIssuer" />
+          <xs:field xpath="issuerKey" />
+        </xs:unique>
+        <xs:unique name="load_DimLawCode_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//load_DimLawCode" />
+          <xs:field xpath="lawCodeKey" />
+        </xs:unique>
+        <xs:unique name="load_DimDate_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//load_DimDate" />
+          <xs:field xpath="DateKey" />
+        </xs:unique>
+        <xs:keyref name="FK_FactDimDate" refer="load_DimDate_Constraint1">
+          <xs:selector xpath=".//load_FactViolationMeasures" />
+          <xs:field xpath="DateKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactDimVehicles" refer="load_DimVehicles_Constraint1">
+          <xs:selector xpath=".//load_FactViolationMeasures" />
+          <xs:field xpath="vehicleKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactDimAddressTiming" refer="Constraint1">
+          <xs:selector xpath=".//load_FactViolationMeasures" />
+          <xs:field xpath="addressTimingKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactDimVehiclePlateType" refer="load_DimVehiclePlateType_Constraint1">
+          <xs:selector xpath=".//load_FactViolationMeasures" />
+          <xs:field xpath="vehiclePlateTypeKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactDimIssuer" refer="load_DimIssuer_Constraint1">
+          <xs:selector xpath=".//load_FactViolationMeasures" />
+          <xs:field xpath="issuerKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactDimTickets" refer="load_DimTickets_Constraint1">
+          <xs:selector xpath=".//load_FactViolationMeasures" />
+          <xs:field xpath="ticketKey" />
+        </xs:keyref>
+        <xs:keyref name="FK_FactDimLawCode" refer="load_DimLawCode_Constraint1">
+          <xs:selector xpath=".//load_FactViolationMeasures" />
+          <xs:field xpath="lawCodeKey" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <NYC_x0020_Parking xmlns="" />
+  </Schema>
+</DataSourceView>

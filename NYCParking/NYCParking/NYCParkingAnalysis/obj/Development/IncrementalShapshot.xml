@@ -1,0 +1,110 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>NYCParkingAnalysis</Database>
+    <Server>LAPTOP-46C06SKS\ECE9017</Server>
+    <ConnectionString>Data Source=LAPTOP-46C06SKS\ECE9017;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>cyeGnatoLrITfqDYvAeAppc3QTY=4/19/2020 10:33:55 PM4/19/2020 7:27:12 PM</TimeStamp>
+        <ID>
+          <String>NYC Parking</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>UUDs0trIxAv3nurFIJXbr/B8a1g=4/19/2020 7:27:46 PM4/19/2020 7:27:46 PM</TimeStamp>
+        <ID>
+          <String>NYC Parking</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>1paZA44S7103yufYWzHkfl10dnY=4/19/2020 7:32:55 PM4/19/2020 7:29:24 PM</TimeStamp>
+        <ID>
+          <String>Dim Address Timing</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>P5PXFYgh1+gThG0FuRbIrwM6K6Y=4/19/2020 7:32:50 PM4/19/2020 7:30:27 PM</TimeStamp>
+        <ID>
+          <String>Dim Vehicles</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>g5fMRSz/SwfrvUjxYnYUCgMaiWc=4/19/2020 7:32:46 PM4/19/2020 7:30:55 PM</TimeStamp>
+        <ID>
+          <String>Dim Vehicle Plate Type</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>clp/oZAxZmklOxSM1DXOfpPXG0w=4/19/2020 7:32:42 PM4/19/2020 7:31:43 PM</TimeStamp>
+        <ID>
+          <String>Dim Tickets</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>q5O2KRURfA4byByTlaeyas049Kg=4/19/2020 7:32:38 PM4/19/2020 7:32:33 PM</TimeStamp>
+        <ID>
+          <String>Dim Issuer</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Ro6lO/SDYh5xj1bt1l0MolX89yk=4/19/2020 7:33:29 PM4/19/2020 7:33:26 PM</TimeStamp>
+        <ID>
+          <String>Dim Law Code</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>syJqnFusz0L6iOYud83wmk8ANo8=4/19/2020 7:34:16 PM4/19/2020 7:33:52 PM</TimeStamp>
+        <ID>
+          <String>Dim Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>Ao1Ez2DgE4JoXuGmW6PLR5sKf30=4/19/2020 7:55:09 PM4/19/2020 7:36:56 PMdznBaA2v8VzSGVKSJ5siuvCXSQ0=4/19/2020 7:43:44 PM4/19/2020 7:36:56 PM</TimeStamp>
+        <ID>
+          <String>NYC Parking</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>7DKc+lbLa6DWzfoiRcD/jm7wGa8=4/19/2020 8:13:57 PM4/19/2020 8:13:57 PM</TimeStamp>
+        <ID>
+          <String>Dim Tickets</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>CnuR/9mBTXsKWO97jb2GVed8skQ=4/19/2020 6:10:41 PM4/19/2020 6:10:41 PM</TimeStamp>
+      <ID>
+        <String>NYCParkingAnalysis</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2020-04-20T02:37:17.543333Z</LastDeployed>
+</DeploymentSnapshot>
